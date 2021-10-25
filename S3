@@ -1,0 +1,43 @@
+S3 has asimple web service interface that you can use to store and retrive any amount of data,at any time from anywhere on the web.
+S3 service is basically used for to store large amount of data with minimum cost.
+data can be stored in S3 buckets and maximum capacity of bucket is 5TB. And you can have upto 100 buckets per account.
+
+Versioning:
+ versioning is means of keeping multiple varients of an object in the same bucket.
+ you can use the versioning to preserve and retrive and restore every version of every object stored in your S3 bucket. bydefault versioning is disable.
+
+Static website Hosting:
+static website delevers HTML,java script, images, videos, and other files to your website visitor and contains no serverside application code like php,or ASP .net.
+typically are used to deliver personal and marketing sites.
+
+Benifits of static website hosting:
+scale up automatically.
+high availability.
+fast content serving with aws cloud front.
+nigligible cost.
+
+Storage classes in S3:
+1. standerd frequntly accessed 
+2. Intelligent teiring.
+3. std infrequntly accessed.
+4. One-zone infrequntly accessed.
+5. S3 Glacier.
+6. RRS- Ruduced redundancy storage.
+
+Cross-region replication:
+cross-region replication is used to copy objects accross AWS S3 buckets in different AWS region.
+
+S3 Lifecycle: 
+
+frequently accessed       infrequntly access         Archive
+
+  reduce redundancy        one-zone    
+
+    0.023$/Gb                0.012$/Gb               0.004$/Gb
+        
+              30 days                  60 days                90days       expire       
+
+          
+
+
+ 
