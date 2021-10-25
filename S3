@@ -29,13 +29,11 @@ cross-region replication is used to copy objects accross AWS S3 buckets in diffe
 
 S3 Lifecycle: 
 
-frequently accessed       infrequntly access         Archive
-
-  reduce redundancy        one-zone    
-
-    0.023$/Gb                0.012$/Gb               0.004$/Gb
-        
-              30 days                  60 days                90days       expire       
+whenever we can store data in s3 buckets bydefault the data will be store in the std.frequenty accessed. 
+when you configure the lifecycle rule to the bucket then data will be stored in std frequently accessed storege class 
+for 30 days. then after 30 days will data automatically goes in to the std.infrequnty accessed storage class and its cost will be 0.012$/Gb
+and data is stored in this store class is for 60 days after 60 days data will then automatically goes into std.S3 Glaciar srorage class.
+this storage class secure and low cost storage class for data archiving and you can store any amount of data at very low cost & its cost is 0.004$/Gb.
 
           
 
